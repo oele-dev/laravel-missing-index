@@ -1,0 +1,39 @@
+{
+    "name": "oeledev/laravel-missing-index",
+    "description": "Detect missing database indexes in Laravel applications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "OeleDev"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/database": "^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OeleDev\\MissingIndex\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OeleDev\\MissingIndex\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OeleDev\\MissingIndex\\MissingIndexServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
